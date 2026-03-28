@@ -1,0 +1,11 @@
+# Create Task
+curl.exe -X POST http://localhost:5000/api/tasks -H "Content-Type: application/json" --data-binary "@task.json"
+
+# Get All Tasks
+curl.exe http://localhost:5000/api/tasks
+
+# Update Task Status
+curl.exe -X PUT http://localhost:5000/api/tasks/1 -H "Content-Type: application/json" --data-binary "@update.json"
+
+# Delete Task
+curl.exe -X DELETE http://localhost:5000/api/tasks/2
